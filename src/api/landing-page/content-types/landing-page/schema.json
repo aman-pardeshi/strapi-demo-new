@@ -4,7 +4,8 @@
   "info": {
     "singularName": "landing-page",
     "pluralName": "landing-pages",
-    "displayName": "Landing Page"
+    "displayName": "Landing Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,20 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-data"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.hero",
+        "blocks.row",
+        "blocks.pricing",
+        "blocks.cta"
+      ]
     }
   }
 }
